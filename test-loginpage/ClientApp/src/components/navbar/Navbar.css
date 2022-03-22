@@ -31,3 +31,11 @@
         border-bottom: 4px solid #fff;
         transition: all 0.2s ease-out;
     }
+
+.profile-pic {
+    height: 2.5rem;
+}
+    .profile-pic:hover {
+        opacity: 0.4;
+        transition: all 0.2s ease-out;
+    }

@@ -14,12 +14,14 @@ export default function HeroSection() {
             <div className='hero-btns'>
                 <Button
                     className="btn-primary"
+                    id='light'
                     variant='light'
                 >
                     Login
                 </Button>
                 <Button
                     className="btn-primary"
+                    id='dark'
                     variant="dark"
                 >
                     Create Profile
