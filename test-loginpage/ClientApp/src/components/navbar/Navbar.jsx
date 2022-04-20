@@ -11,7 +11,10 @@ export default function Navbar() {
                     <Link to='/' className="nav-links">
                         Home
                     </Link>
-                    <Link to='/profile' className="nav-Links">
+                    <Link to='/data-display' className="nav-links">
+                        DataDisplayTest
+                    </Link>
+                    <Link to='/profile' className="nav-links">
                         <img className='profile-pic' src={profile_pic} alt='Profile' />
                     </Link>
                 </div>

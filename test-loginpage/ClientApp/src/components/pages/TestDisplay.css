@@ -1,0 +1,26 @@
+﻿.test-container {
+    /*background: url('../../images/Green.JPG') center center/cover no-repeat;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: contain;
+}
+
+
+.test-btns {
+    margin-top: 32px;
+}
+
+    .test-btns .btn {
+        margin: 6px;
+    }
+
+#dark.btn:hover {
+    outline: 2px solid #fff;
+    opacity: 75%;
+    transition: 0.1s ease-in-out;
+}
