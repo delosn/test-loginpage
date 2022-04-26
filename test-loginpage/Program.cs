@@ -22,6 +22,17 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
+
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(
+//        name: "default",
+//        pattern: "{controller}/{action=Index}/{id?}"
+//        //pattern: "api/{controller}/{id}"
+//        );
+//});
+
+
 app.MapFallbackToFile("index.html"); ;
 
 app.Run();

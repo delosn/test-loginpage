@@ -6,22 +6,22 @@ import './TestDisplay.css';
 export default function LoginPage() {
 
 
-    const [showData, setShowData] = useState('');
 
-    //const fetchData = () => {
-    //    fetch("api/Home/GetData")
-    //        .then(showData => setShowData(showData))
+
+
+    //const getString = async() => {
+    //    const response = await fetch("Home/GetData");
+    //    const Data = await response.text()
+    //    console.log(Data)
     //}
 
-    const getString = async() => {
-        const response = await fetch("api/Home/GetData");
-        /*const showData = await response.json();*/
-        /*setShowData(showData);*/
-        const Data = await response.text() /*<-- this is not correct*/
-        console.log(Data)
-        console.log(response)
-    }
+    const [showData, setShowData] = useState('');
 
+    const getString = async () => {
+        const response = await fetch("Home/GetData")
+        const showData = await response.text()
+        setShowData(showData)
+    }
 
 
 
@@ -34,7 +34,8 @@ export default function LoginPage() {
                     id='dark'
                     variant='dark'
                     onClick={getString}
-                 >Get Data</Button>
+                >Get Data</Button>
+                <h2>{showData}</h2>
             </div>
         </div>
     );

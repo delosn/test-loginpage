@@ -2,16 +2,21 @@
 
 namespace test_loginpage.Controllers
 {
-    [Route("api/controller")]
+    //[Route("api/controller")]
+    //[ApiController]
     [ApiController]
-    public class HomeController : Controller
+    [Route("[controller]")]
+    public class HomeController : ControllerBase
     {
-        [HttpGet("GetData")]
-        public IActionResult GetData(string hello)
+        [HttpGet]
+        [Route("GetData")]
+        public IActionResult GetData()
         {
-            hello = "Hello World";
-            return Content(hello);
+            string hello = "Hello World";
+            return Ok(hello);
         }
+
+        
     }
 }
 
