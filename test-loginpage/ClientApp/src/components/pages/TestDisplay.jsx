@@ -18,9 +18,9 @@ export default function LoginPage() {
     const [showData, setShowData] = useState('');
 
     const getString = async () => {
-        const response = await fetch("Home/GetData")
-        const showData = await response.text()
-        setShowData(showData)
+        const response = await fetch("Home/GetDatabaseData")
+        const data = await response.json()
+        setShowData(JSON.stringify(data))
     }
 
 
